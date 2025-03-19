@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio Website</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/41af30c772.js" crossorigin="anonymous"></script>
+</head>
+<body>
+<div id="header">
+<div class="container">
+    <nav>
+        <img src="images/logo.png" class="logo">
+        <ul id="sidemenu">
+            <li><a href="#header">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <i class="fa-solid fa-circle-xmark" onclick="closemenu()"></i>
+        </ul>
+        <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+    </nav>
+    <div class="header-text">
+        <p>Software Engineer</p>
+        <h1>Hi, I'm <span>Ankanendu</span><br>Mondal From India</h1>
+    </div>
+</div>
+</div>
+
+<!-- ---------------about--------------- -->
+<div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="images/user.png">
+            </div>
+            <div class="about-col-2">
+                <h1 class="sub-title">About Me</h1>
+                <p>Hi, I’m Ankanendu Mondal, a final-year Computer Science Engineering student at Budge Budge Institute of Technology, driven by a passion for coding, technology, and innovation. I specialize in UI/UX design, frontend development, and databases, with a strong foundation in data structures, AI/ML, and cybersecurity.
+                    <br><br>I’ve showcased my skills in national-level competitions like Smart India Hackathon 2024 and Innovation Ignite 3.0, alongside earning certifications from Google Developer Student Clubs and Infosys Foundation. As part of The Voice-Activated System Navigator project, I contributed to the frontend and database, blending functionality with user-centric design.                    
+                    <br><br>I thrive on creativity, precision, and continuous learning, always eager to tackle new challenges and create impactful tech solutions.</p>
+                    
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>UI/UX</span><br>Designing, Web/App interfaces</li>
+                            <li><span>AI/ML & CyberSecurity</span><br>AI/ML Knowledge, CyberSecurity Principles </li>
+                            <li><span>DB Management</span><br>Designing, Managing, Optimizing</li>
+                            <li><span>Data Structure</span><br>Algorithms, Problem-Solving</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>Frontend & UI/UX</span><br>Designing, Development</li>                           
+                            <li><span>DBMS & Other PL</span><br>SQL/MYSQL, MongoDB, JAVA, Python, HTML-CSS</li>                           
+                            <li><span>Hackathon Participation</span><br>Smart India Hackathon 2024</li>
+                            <li><span>Infosys Trainee</span><br>Data Analytics using PowerBI</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>YoP: 2025</span><br>B.Tech in Computer Science & Engineering
+                            <br>Budge Budge Institute Of Technology, Kolkata
+                            <br>Grade: 8.4 CGPA</li>                         
+                            <li><span>YoP: 2021</span><br>Class XII (ISC)
+                            <br>St. Stephen’s School, Budge Budge, Kolkata
+                            <br>Score: 82%</li>
+                            <li><span>YoP: 2019</span><br>Class X (ICSE)
+                            <br>St. Stephen’s School, Budge Budge, Kolkata
+                            <br>Score: 64.5%</li>
+                        </ul>
+                    </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- --------------services------------ -->
+<div id="services">
+    <div class="container">
+        <h1 class="sub-title">My Services</h1>
+        <div class="services-list">
+            <div>
+                <i class="fa-solid fa-code"></i>
+                <h2>UI/UX Design Services</h2>
+                <p>-Wireframing and Prototyping  
+                    <br>-User Interface Design  
+                    <br>-User Experience Optimization</p>
+                    <a href="#">Learn more</a>
+            </div>
+            <div>
+                <i class="fa-solid fa-database"></i>
+                <h2>Database Management</h2>
+                <p>-SQL/MySQL Database Design  
+                    <br>-Database Optimization and Query Management  
+                    <br>-Backend Integration with Databases</p>
+                    <a href="#">Learn more</a>
+            </div>
+            <div>
+                <i class="fa-solid fa-people-roof"></i>
+                <h2>Project Consultation & Development</h2>
+                <p>-Full-Stack Project Development Guidance  
+                    <br>-Hackathon Participation & Idea Implementation  
+                    <br>-Team Collaboration and Project Management</p>
+                    <a href="#">Learn more</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- -----------------portfolio------------------ -->
+ <div id="portfolio">
+    <div class="container">
+        <h1 class="sub-title">My Work</h1>
+        <div class="work-list">
+            <div class="work">
+                <img src="images/work-1.jpg">
+                <div class="layer">
+                    <h3>Social Media Clone App</h3>
+                    <p>Crafted intuitive and engaging user interfaces with seamless experiences, including a fully functional social media clone app showcasing modern design principles.
+                    </p>
+                    <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/work-2.jpg">
+                <div class="layer">
+                    <h3>Student Management System Development</h3>
+                    <p>Developed a fully functional Student Management System to streamline student data handling, featuring efficient database integration and user-friendly interfaces.
+                    </p>
+                    <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/work-3.jpg">
+                <div class="layer">
+                    <h3>Project Consultation & Development</h3>
+                    <p>Providing strategic guidance and hands-on development for innovative software solutions. Specializing in frontend design, database management, and efficient project execution to deliver impactful results.
+                    </p>
+                    <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+        </div>
+        <a href="#" class="btn">See More</a>
+    </div>
+ </div>
+
+ <!-- -----------------contact----------------- -->
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p><i class="fa-solid fa-paper-plane"></i> ankanmondal412003@gmail.com</p>
+                <p><i class="fa-solid fa-phone"></i> +91 8017508337</p>
+                <div class="social-icons">
+                    <a href="https://www.facebook.com/share/1J74Vui1qM/"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="https://www.instagram.com/a_ghost_from_hell?igsh=djVwMHEwMHlkang2&utm_source=ig_contact_invite"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="https://www.linkedin.com/in/ankanendu-mondal-67b1a0294?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="http://t.me/grim_725"><i class="fa-brands fa-telegram"></i></a>
+                </div>
+                <a href="images/Ankanendu_Resume.pdf" download class="btn btn2">Download CV</a>
+            </div>
+            <div class="contact-right">
+                <form name="submit-to-google-sheet">
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="email" name="email" placeholder="Your E-mail" required>
+                    <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                    <button type="submit" class="btn btn2">Submit</button>
+                </form>
+                <span id="msg"></span>
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+        <p>Copyright © Ankanendu Mondal 2025<i class="fa-solid fa-heart"></i>. All rights reserved</p>
+    </div>
+</div>
+
+
+
+
+<script>
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+
+</script>
+
+<script>
+    var sidemeu = document.getElementById("sidemenu");
+
+    function openmenu(){
+        sidemeu.style.right = "0";
+    }
+    function closemenu(){
+        sidemeu.style.right = "-200px";
+    }
+
+</script>
+
+<script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbz8AIakBzsMEAIC7bKJnSDgq-sg5Vd7oZjMnjaXky9e0FDNpzOS8Xu-ken0vZ0n7eCzLg/exec'
+    const form = document.forms['submit-to-google-sheet']
+    const msg = document.getElementById("msg")
+  
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => {
+            msg.innerHTML = "Message Sent Succesfully"
+            setTimeout(function(){
+                mag.innerHTML = ""
+            },5000)
+            form.reset()
+        })
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
+
+</body>
+</html>
